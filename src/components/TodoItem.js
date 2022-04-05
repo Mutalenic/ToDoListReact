@@ -9,6 +9,7 @@ class TodoItem extends React.Component {
       opacity: 0.4,
       textDecoration: "line-through",
     }
+    const { completed, id, title } = this.props.todo
     return (
       <li className={styles.item}>
         <input
@@ -20,8 +21,7 @@ class TodoItem extends React.Component {
         <button onClick={() => this.props.deleteTodoProps(this.props.todo.id)}>
           Delete
         </button>
-        <span style={this.props.todo.completed ? completedStyle : null}>
-          {this.props.todo.title}
+        <span style={completed ? completedStyle : null}>{title}
         </span>
       </li>
     )
