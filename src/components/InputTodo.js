@@ -22,7 +22,7 @@ class InputTodo extends Component {
       }
      render() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit} className="form-container">
         <input
         type="text"
         placeholder="Add Todo..."
