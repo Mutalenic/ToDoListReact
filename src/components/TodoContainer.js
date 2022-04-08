@@ -3,25 +3,10 @@ import TodosList from "./TodosList";
 import Header from "./Header"
 import InputTodo from "./InputTodo";
 import { v4 as uuidv4 } from "uuid";
+
 class TodoContainer extends React.Component {
     state = {
-        todos: [
-          {
-            id: uuidv4(),
-            title: "Setup development environment",
-            completed: true
-          },
-          {
-            id: uuidv4(),
-            title: "Develop website and add content",
-            completed: false
-          },
-          {
-            id: uuidv4(),
-            title: "Deploy to live server",
-            completed: false
-          }
-        ]
+        todos: []
        };
        handleChange = id => {
         this.setState(prevState => ({
@@ -47,7 +32,7 @@ class TodoContainer extends React.Component {
        };
        addTodoItem = title => {
         const newTodo = {
-            id: 4,
+            id: uuidv4(), 
             title: title,
             completed: false
         };
