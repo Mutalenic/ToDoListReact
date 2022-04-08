@@ -12,13 +12,24 @@ class TodoItem extends React.Component {
     })
   } 
 
+  handleUpdatedDone = (event) => {
+    if (event.key === "Enter" ) {
+      this.setState({ editing: false });
+    }
+  }
+
+  componentWillUnmount() {
+    console.log("Cleaning up...")
+  }
+
   render() {
-    const completedStyle = {
+        const completedStyle = {
       fontStyle: "italic",
       color: "#595959",
       opacity: 0.4,
       textDecoration: "line-through",
     }
+
     const { completed, id, title } = this.props.todo
 
     let viewMode = {};
