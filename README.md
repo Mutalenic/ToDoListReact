@@ -1,9 +1,9 @@
-## Math Magicians: Full Website
-In this project, I created a full website for the Math magicians app, consisting of several pages and using the components that I already created.
+## Todo App
+Description
+This project has been bootstrapped with Create React App.
 
-!(./src/images/calculator.png)
-!(./src/images/Screenshotone.png) !(./src/images/Screenshottwo.png)
-!(./src/images/Screenshotthree.png)
+"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.
+
 
 ## Built With
 This project is built with: 
